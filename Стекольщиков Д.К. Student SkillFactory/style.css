@@ -1,0 +1,48 @@
+﻿/* Dropdown Button (Кнопка раскрывающегося списка) */
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Выпадающая кнопка при наведении и фокусировке */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+
+/* Контейнер <div> — необходим для размещения содержимого */
+/* раскрывающегося списка. */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Содержимое раскрывающегося списка (по умолчанию скрыто) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Ссылки внутри раскрывающегося списка */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Изменение цвета выпадающих ссылок при наведении. */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Показать раскрывающееся меню (используйте JS, чтобы добавить этот  */
+/* класс в контейнер .dropdown-content, когда пользователь нажимает   */
+/* кнопку раскрывающегося списка).                                    */
+.show {display:block;}
+
